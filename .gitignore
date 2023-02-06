@@ -1,5 +1,9 @@
-# suicide ideation data file
+# suicide ideation data files
 Suicide_Detection_Data.csv
+X_train.npz
+X_test.npz
+y_train.npy
+y_test.npy
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
