@@ -117,3 +117,7 @@ def plot_confusion_matrix(y_test, y_pred):
     ax.set_title('Confusion Matrix')
     plt.show()
     return fig
+
+# function to get the percent change from one value to another
+def percentChange(a, b):
+    return ((a - b)*100)/a
