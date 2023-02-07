@@ -15,7 +15,7 @@ import numpy as np
 import time
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-import scipy
+from scipy import sparse
 import helperFunctions as hf
 
 # CONSTANTS
@@ -84,7 +84,7 @@ if (__name__=="__main__"):
     X_test_path = DATA_FOLDER + "X_test.npz"
     y_train_path = DATA_FOLDER + "y_train.npy"
     y_test_path = DATA_FOLDER + "y_test.npy"
-    scipy.sparse.save_npz(X_train_path, X_train)
-    scipy.sparse.save_npz(X_test_path, X_test)
+    sparse.save_npz(X_train_path, X_train)
+    sparse.save_npz(X_test_path, X_test)
     np.save(y_train_path, y_train)
     np.save(y_test_path, y_test)
